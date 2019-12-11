@@ -11,6 +11,10 @@ Created a RESTful Web service that displays data of empires in JSON format using
 * /empires/{empireId}/army
 
 * /empires/{empireid}/army/{armyid}
+
+* Empires data is in the Empires.JSON file
+
+* Armies data is in the Army.JSON file
     
 Steps to run RESTful web service:
 
