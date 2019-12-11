@@ -25,10 +25,12 @@ Steps to run RESTful web service:
 * Check the docker image created using the command
 ### `docker images`
 
-* You can check the image created using "docker images". You will find the image students-image under the list.
+* You will find the image empires-image under the list.
 
-* Run the created students-image image inside a container using the following command
+* Run the created empires-image image inside a container using the following command
 ### `docker run -d -p 5000:5000 --name empires-container empires-image`
+
+* You will find the container empires-container in the list
 
 * Check running of docker container created using the command 
 ### `docker ps`
@@ -40,20 +42,25 @@ Steps to run RESTful web service:
 * App will now be running at the following urls: -
   http://<host_ip_address>:5000
 
-  http://<host_ip_address>:5000/empires
+* http://<host_ip_address>:5000/empires
 
-  http://<host_ip_address>:5000/empires/101 --- 101 is the id you wish to search
+* http://<host_ip_address>:5000/empires/{empire_id} 
+
+### `http://<host_ip_address>:5000/empires/101` --- 101 is the id you wish to search
+
+* Empires ids are from 101 to 105
 
 * http://<host_ip_address>:5000/empires/101/army
 
-* http://<host_ip_address>:5000/empires/101/army/101
+* http://<host_ip_address>:5000/empires/101/army/{army_id}
+
+### `http://<host_ip_address>:5000/empires/101/army/1001`
+
+* Army ids are 1001 and 1002
 
 * For data in json format: -
 
-* http://<host_ip_address>:5000/empires?type=json
-
-* http://<host_ip_address>:5000/empires/101?type=json
-
-* http://<host_ip_address>:5000/empires/101/army?type=json
-
-* http://<host_ip_address>:5000/empires/101/army/101?type=json
+### `http://<host_ip_address>:5000/empires?type=json
+http://<host_ip_address>:5000/empires/101?type=json
+http://<host_ip_address>:5000/empires/101/army?type=json
+http://<host_ip_address>:5000/empires/101/army/101?type=json`
