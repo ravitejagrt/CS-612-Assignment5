@@ -60,7 +60,7 @@ Steps to run RESTful web service:
 
 * For data in json format: -
 
-### `http://<host_ip_address>:5000/empires?type=json
-http://<host_ip_address>:5000/empires/101?type=json
-http://<host_ip_address>:5000/empires/101/army?type=json
-http://<host_ip_address>:5000/empires/101/army/101?type=json`
+### `http://<host_ip_address>:5000/empires?type=json`
+### `http://<host_ip_address>:5000/empires/101?type=json`
+### `http://<host_ip_address>:5000/empires/101/army?type=json`
+### `http://<host_ip_address>:5000/empires/101/army/101?type=json`
