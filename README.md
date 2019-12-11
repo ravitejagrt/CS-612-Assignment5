@@ -22,12 +22,20 @@ Steps to run RESTful web service:
 * A Docker Image is created by running the following command: -
 ### `docker build -t empires-image:latest .`
 
+* Check the docker image created using the command
+### `docker images`
+
 * You can check the image created using "docker images". You will find the image students-image under the list.
 
 * Run the created students-image image inside a container using the following command
 ### `docker run -d -p 5000:5000 --name empires-container empires-image`
 
-* Check running docker container by "docker ps"
+* Check running of docker container created using the command 
+### `docker ps`
+
+* Check the ip address of the docker using the command
+### `docker-machine ip default`
+* This will be the host_ip_address.
 
 * App will now be running at the following urls: -
   http://<host_ip_address>:5000
