@@ -5,7 +5,7 @@ from flask import Flask, jsonify, render_template, request, Response
 app = Flask(__name__)
 
 
-with open('EmpiresArmy.JSON') as json_data:
+with open('Empires.JSON') as json_data:
     d = json.load(json_data)
     list_of_empires = []
     for data in d['empires']:
@@ -62,4 +62,4 @@ def army_by_empire_id_army_id(empire_id, army_id):
 	return render_template("index.html", list_army_data=arm, empire_id=empire_id)
 
 if __name__ == '__main__':
-	 app.run(host='0.0.0.0', port=5000)
+	 app.run(host='localhost', port=5000)
