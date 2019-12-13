@@ -68,3 +68,7 @@ Steps to run RESTful web service:
 ### `http://<host_ip_address>:5000/empires/101?type=json`
 ### `http://<host_ip_address>:5000/empires/101/army?type=json`
 ### `http://<host_ip_address>:5000/empires/101/army/101?type=json`
+
+* If you are running the project in pycharm IDE, use 
+### `localhost:5000` or 
+### `0.0.0.0:5000`
