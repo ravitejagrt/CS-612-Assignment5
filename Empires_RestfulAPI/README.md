@@ -18,10 +18,11 @@ Created a RESTful Web service that displays data of empires in JSON format using
     
 Steps to run RESTful web service:
 
-* Create the project with app.py and JSON file in a single folder.
-  The templates folder consists of the page.html file which displays the json result on the webpage
-  
 * Install docker. After installing docker follow the below steps.
+
+* Clone the repo from Github
+
+* Change the directory to the project where it is cloned in the docker
 
 * A Docker Image is created by running the following command: -
 ### `docker build -t empires-image:latest .`
